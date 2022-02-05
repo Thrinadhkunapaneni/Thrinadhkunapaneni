@@ -4,7 +4,6 @@ import {
 } from 'https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore.js'
 import { COLLECTIONS } from "../model/constants.js";
 import { Thread } from '../model/thread.js';
-import {Edit} from '../viewpage/edit.js';
 
 const db = getFirestore();
 

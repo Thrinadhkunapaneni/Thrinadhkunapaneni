@@ -18,7 +18,7 @@
   <div class="my-banner">AWESOME DISCUSSON FORM</div>
 
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,10 @@
             <button id="menu-about" class="btn btn-outline-success">About</button>
           </li>
           <li class="nav-item modal-postauth">
-            <button id="menu-signout" class="btn btn-outline-danger">SignOut</button>
+            
+            <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="You will get signed off">
+              <button id="menu-signout" class="btn btn-outline-danger">SignOut</button>
+            </span>
           </li>
         </ul>
         <div class="modal-postauth">
@@ -120,10 +123,10 @@
               <input type="text" name="title" placeholder="Title of the thread" required minlength="2">
             </div>
             <div>
-              <input type="text" name="keywords" placeholder="Search keys separated by a blank" required minlength="2">
+              <input type="text" name="keywords" placeholder="Key words for updated thread" required minlength="2">
             </div>
             <div>
-              <textarea name="content" cols="50" rows="5" placeholder="content of the thread" required minlength="5"></textarea>
+              <textarea name="content" cols="50" rows="5" placeholder="content of the thread to be edited" required minlength="5"></textarea>
             </div>
             <div>
               <button type ="submit" class="btn btn-outline-success">Edit</button>
@@ -133,6 +136,7 @@
       </div>
     </div>
   </div>
+  </nav>
 
   <!-- Modal: popup info box -->
   <div class="modal fade" id="modal-infobox" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
